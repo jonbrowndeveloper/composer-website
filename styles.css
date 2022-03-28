@@ -1,0 +1,31 @@
+.jb-header {
+    height: 120px;
+}
+
+.jb-header-text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    padding-top: 24px;
+}
+
+#slideshow {
+    width: 100%;
+    max-width: 380px;
+    opacity:1;
+    transition: opacity 1s;
+}
+
+#slideshow.fadeOut {
+    opacity:0;
+}
+
+.col {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+#tracks-button {
+    margin:0 auto;
+    display:block;
+    max-width: 140px;
+}
