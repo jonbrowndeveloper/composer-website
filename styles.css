@@ -10,13 +10,13 @@
 
 #slideshow {
     width: 100%;
-    max-width: 380px;
-    opacity:1;
+    max-width: 300px;
+    opacity: 1;
     transition: opacity 1s;
 }
 
 #slideshow.fadeOut {
-    opacity:0;
+    opacity: 0;
 }
 
 .col {
@@ -25,7 +25,32 @@
 }
 
 #tracks-button {
-    margin:0 auto;
-    display:block;
+    margin: 0 auto;
+    display: block;
     max-width: 140px;
+}
+
+.jb-p {
+    padding: 20px;
+    text-align: center;
+}
+
+#first-paragraph-row {
+    display: flex;
+    justify-content: center;
+}
+
+#first-paragraph {
+    max-width: 500px;
+}
+
+.jb-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.jb-box {
+    max-width: 500px;
+    min-width: 300px;
 }
