@@ -1,9 +1,20 @@
+@font-face {
+    font-family: "Josefin Sans Light";
+    src: url("./josefin-sans-font/JosefinSansLight-ZVEll.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Josefin Sans Regular";
+    src: url("./josefin-sans-font/JosefinSansRegular-x3LYV.ttf") format("truetype");
+}
+
+
 .jb-header {
     height: 120px;
 }
 
 .jb-header-text {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans Light', sans-serif;
     font-size: 40px;
     padding-top: 24px;
 }
@@ -12,7 +23,7 @@
     width: 100%;
     max-width: 300px;
     opacity: 1;
-    transition: opacity 1s;
+    transition: opacity 800ms;
 }
 
 #slideshow.fadeOut {
@@ -31,6 +42,7 @@
 }
 
 .jb-p {
+    font-family: 'Josefin Sans Regular', sans-serif;
     padding: 20px;
     text-align: center;
 }
@@ -53,4 +65,11 @@
 .jb-box {
     max-width: 500px;
     min-width: 300px;
+}
+
+.text-muted {
+    font-size: .675em;
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-bottom: 12px;
 }

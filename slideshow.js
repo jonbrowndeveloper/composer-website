@@ -4,16 +4,27 @@ var imgArray = [
     './img/3.png',
     './img/4.png'],
     curIndex = 0;
-    imgDuration = 3000;
+    slideShowRunning = true;
 
-function slideShow() {
-    document.getElementById('slideshow').className += "fadeOut";
-    setTimeout(function() {
-        document.getElementById('slideshow').src = imgArray[curIndex];
-        document.getElementById('slideshow').className = "";
-    },1000);
-    curIndex++;
-    if (curIndex == imgArray.length) { curIndex = 0; }
-    setTimeout(slideShow, imgDuration);
+function slideShowFadeOut() {
+    if (slideShowRunning) {
+        setTimeout(function () {
+            document.getElementById('slideshow').className += "fadeOut";
+            curIndex++;
+            setTimeout(function () {
+                document.getElementById('slideshow').src = imgArray[curIndex];
+            }, 400);
+            slideShowFadeIn()
+        }, 800);
+    }
 }
-slideShow();
+
+function slideShowFadeIn() {
+    if (curIndex == imgArray.length - 1) { slideShowRunning = false; }
+    setTimeout(function () {
+
+        document.getElementById('slideshow').className = "";
+        slideShowFadeOut()
+    }, 800);
+}
+slideShowFadeOut();
