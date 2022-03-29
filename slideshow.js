@@ -10,6 +10,7 @@ function slideShow() {
     document.getElementById('slideshow').className += "fadeOut";
     setTimeout(function() {
         document.getElementById('slideshow').src = imgArray[curIndex];
+        document.getElementById('slideshow').className = "";
     },1000);
     curIndex++;
     if (curIndex == imgArray.length) { curIndex = 0; }
